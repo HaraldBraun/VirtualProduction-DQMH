@@ -15,3 +15,16 @@
 *.aliases
 *.lvlps
 .cache/
+
+# Ignore local build directories and temporary files
+/build/
+/dist/
+*.tmp
+*.bak
+
+# LabVIEW 202x Search indexes and help files
+*.chm
+*.p_chm
+
+# DQMH Scripting / Unit Test temporary files
+/src/Modules/*/Test/
