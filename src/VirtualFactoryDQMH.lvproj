@@ -12,11 +12,18 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Libraries" Type="Folder" URL="../Libraries">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="Modules" Type="Folder" URL="../Modules">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Libraries" Type="Folder"/>
+		<Item Name="Modules" Type="Folder">
+			<Item Name="Central Monitor" Type="Folder">
+				<Item Name="Central Monitor.lvlib" Type="Library" URL="../Modules/Central Monitor/Central Monitor.lvlib"/>
+				<Item Name="Test Central Monitor API.vi" Type="VI" URL="../Modules/Central Monitor/Test Central Monitor API.vi"/>
+			</Item>
+			<Item Name="Production Unit" Type="Folder">
+				<Item Name="Clone Registration" Type="Folder"/>
+				<Item Name="VI Reference Management" Type="Folder"/>
+				<Item Name="Production Unit.lvlib" Type="Library" URL="../Modules/Production Unit/Production Unit.lvlib"/>
+				<Item Name="Test Production Unit API.vi" Type="VI" URL="../Modules/Production Unit/Test Production Unit API.vi"/>
+			</Item>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
